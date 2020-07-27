@@ -14,7 +14,8 @@ const WorkoutSchema = new Schema({
             type: String
         },
         duration: {
-            type: Number
+            type: Number,
+            required: true,
         },
         distance: {
             type: Number
