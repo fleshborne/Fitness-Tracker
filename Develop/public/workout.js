@@ -5,6 +5,7 @@ async function initWorkout() {
     document
       .querySelector("a[href='/exercise?']")
       .setAttribute("href", `/exercise?id=${lastWorkout._id}`);
+    // works cited: Thank you Keith! -https://github.com/bowdwin/Fitness/commit/113019ca299dcee97a540bd61ab4a32f2e733219
     let duration = 0;
     for (let i = 0; i < lastWorkout.exercises.length; i++) {
       if (lastWorkout.exercises[i].duration !== 0) {
