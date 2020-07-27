@@ -15,7 +15,6 @@ const WorkoutSchema = new Schema({
         },
         duration: {
             type: Number,
-            required: true,
         },
         distance: {
             type: Number
@@ -29,7 +28,7 @@ const WorkoutSchema = new Schema({
         reps: {
             type: Number
         },
-    }],
+    }, ],
 });
 
 const Workout = mongoose.model('Workout', WorkoutSchema);
